@@ -21,7 +21,7 @@ body {
   background-color: #d9e8ef;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1000px) {
   body {
     max-width: 90%;
   }
@@ -60,15 +60,6 @@ li {
   width: 15rem;
 }
 
-.hero__img {
-  width: 100%;
-  height: auto;
-  -ms-grid-row: 1;
-  -ms-grid-row-span: 2;
-  -ms-grid-column: 2;
-  grid-area: three;
-}
-
 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -87,6 +78,19 @@ li {
   display: -ms-inline-flexbox;
   display: inline-flex;
   gap: 2rem;
+}
+
+.nav-menu__item {
+  color: #0b0d17;
+}
+
+.hero__img {
+  width: 100%;
+  height: auto;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 2;
+  grid-area: three;
 }
 
 .hero {
@@ -114,7 +118,17 @@ li {
 }
 
 /****media query****/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1000px) {
+  .header__container {
+        grid-template-areas: 'one' 'three' 'two';
+    text-align: center;
+  }
+  .hero, .nav {
+    padding: 0;
+  }
+  .hero__title {
+    font-size: 4.3rem;
+  }
   .nav {
     width: 100%;
     padding: 0;
@@ -124,18 +138,6 @@ li {
   }
   .nav-menu {
     display: none;
-  }
-  .hero, .nav {
-    padding: 0;
-  }
-  .hero__title {
-    font-size: 4rem;
-  }
-}
-
-@media only screen and (max-width: 900px) {
-  .header__container {
-        grid-template-areas: 'one' 'three' 'two';
   }
 }
 /*# sourceMappingURL=main.css.map */

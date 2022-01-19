@@ -20,7 +20,7 @@ body {
     max-width: 1440px;
     background-color: $gray-color;
 }
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     body {
         max-width: 90%;
     };
@@ -54,11 +54,6 @@ li {
 .logo {
     width: 15rem;
 }
-.hero__img {
-    width: 100%;
-    height: auto;
-    grid-area: three;
-}
 .nav {
     display: flex;
     align-items: center;
@@ -68,6 +63,14 @@ li {
 .nav-menu {
     display: inline-flex;
     gap: 2rem;
+}
+.nav-menu__item {
+    color: $black-color;
+}
+.hero__img {
+    width: 100%;
+    height: auto;
+    grid-area: three;
 }
 .hero {
     grid-area: two;
@@ -87,30 +90,27 @@ li {
     padding: 0 10rem;
 }
 /****media query****/
-@media only screen and (max-width: 1100px){
-    .nav {
-        width: 100%;
-        padding: 0;
-        justify-content: space-between;
-    }
-    .nav-menu {
-        display: none;
-    }
-    .hero, .nav {
-        padding: 0;
-    }
-    .hero__title {
-        font-size: 4rem;
-    }
-    
-}
 
-@media only screen and (max-width: 900px){
+@media only screen and (max-width: 1000px){
     .header__container {
         grid-template-areas: 
         'one'
         'three'
         'two';
+        text-align: center;
     }
-
+    .hero, .nav {
+        padding: 0;
+    }
+    .hero__title {
+        font-size: 4.3rem;
+    }
+    .nav {
+        width: 100%;
+        padding: 0;
+        justify-content: space-between;
+    }   
+    .nav-menu {
+        display: none;
+    }
 }
