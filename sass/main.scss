@@ -1,0 +1,26 @@
+@import './partials/variables';
+@import './partials/mixins.scss';
+
+
+/******css reset******/
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+} 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+}
+img {
+    width: 100%;
+    height: auto;
+}
+
+
+/*******header********/
