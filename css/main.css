@@ -84,6 +84,20 @@ li {
   color: #0b0d17;
 }
 
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+
 .hero__img {
   width: 100%;
   height: auto;
@@ -129,6 +143,9 @@ li {
   .hero__title {
     font-size: 4.3rem;
   }
+  .hero__img {
+    margin-top: 4rem;
+  }
   .nav {
     width: 100%;
     padding: 0;
@@ -138,6 +155,9 @@ li {
   }
   .nav-menu {
     display: none;
+  }
+  .hamburger {
+    display: block;
   }
 }
 /*# sourceMappingURL=main.css.map */
