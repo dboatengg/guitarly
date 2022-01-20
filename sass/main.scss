@@ -2,6 +2,7 @@
 @import './partials/mixins.scss';
 @import './components/header';
 @import './components/rating';
+@import './components/about';
 
 
 /******css reset******/
@@ -40,11 +41,11 @@ li {
 
 
 // defining max-width
-.header__container{
+.header__container, .about__content{
     max-width: 1440px;
     margin: 0 auto;
 }
-.rating__container {
+.rating__container{
     max-width: 1024px;
     margin: 0 auto;
 }
