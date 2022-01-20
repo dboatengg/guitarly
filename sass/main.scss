@@ -1,5 +1,7 @@
 @import './partials/variables';
 @import './partials/mixins.scss';
+@import './components/header';
+@import './components/rating';
 
 
 /******css reset******/
@@ -13,17 +15,10 @@ html {
     box-sizing: border-box;
 }
 body {
-    margin: 0 auto;
+    margin: 0;
     padding: 0;
     font-family: 'Inter', sans-serif;
     font-size: 1.8rem;
-    max-width: 1440px;
-    background-color: $gray-color;
-}
-@media only screen and (max-width: 1000px){
-    body {
-        max-width: 90%;
-    };
 }
 p {
     line-height: 32px;
@@ -44,92 +39,19 @@ li {
 }
 
 
-/*******header********/
-.header__container {
-    display: grid;
-    grid-template-areas: 
-    'one three'
-    'two three';
+// defining max-width
+.header__container{
+    max-width: 1440px;
+    margin: 0 auto;
 }
-.logo {
-    width: 15rem;
+.rating__container {
+    max-width: 1024px;
+    margin: 0 auto;
 }
-.nav {
-    display: flex;
-    align-items: center;
-    grid-area: one;
-    gap: 2rem;
-}
-.nav-menu {
-    display: inline-flex;
-    gap: 2rem;
-}
-.nav-menu__item {
-    color: $black-color;
-}
-.hamburger {
-    display: none;
-}
-
-.bar {
-    display: block;
-    width: 25px;
-    height: 3px;
-    margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
-    transition: all 0.3s ease-in-out;
-    background-color: #101010;
-}
-.hero__img {
-    width: 100%;
-    height: auto;
-    grid-area: three;
-}
-.hero {
-    grid-area: two;
-}
-.hero__title {
-    font-size: 7.2rem;
-}
-.hero__btn {
-    background-color: $primary-color;
-    color: $white-color;
-    margin-top: 3.2rem;
-}
-.hero__title {
-    margin-bottom: 1.6rem;
-}
-.hero, .nav {
-    padding: 0 10rem;
-}
-/****media query****/
-
 @media only screen and (max-width: 1000px){
-    .header__container {
-        grid-template-areas: 
-        'one'
-        'three'
-        'two';
-        text-align: center;
-    }
-    .hero, .nav {
-        padding: 0;
-    }
-    .hero__title {
-        font-size: 4.3rem;
-    }
-    .hero__img {
-        margin-top: 4rem;
-    }
-    .nav {
-        width: 100%;
-        padding: 0;
-        justify-content: space-between;
-    }   
-    .nav-menu {
-        display: none;
-    }
-    .hamburger {
-        display: block;
-    }
+    .header__container, .rating__container {
+        max-width: 90%;
+    };
 }
+
+
