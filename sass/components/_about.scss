@@ -7,7 +7,7 @@
     align-items: center;
 }
 .about__right {
-    padding: 0 7rem;
+    padding: 0 5rem;
 }
 .about__btn {
     background-color: $primary-color;
@@ -24,14 +24,14 @@
 @media only screen and (max-width: 1100px){
     .about__content {
         grid-template-columns: 1fr;
-        padding: 5rem;
+        padding: 5rem 2rem;
         text-align: center;
     }
     .about__heading {
         margin-bottom: 2rem;
     }
     .about__right {
-        padding: 0;
+        padding: 0 0;
     }
     .about__btn {
         margin-top: 2rem;

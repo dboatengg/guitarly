@@ -186,7 +186,7 @@ header {
 }
 
 .about__right {
-  padding: 0 7rem;
+  padding: 0 5rem;
 }
 
 .about__btn {
@@ -205,14 +205,14 @@ header {
   .about__content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
-    padding: 5rem;
+    padding: 5rem 2rem;
     text-align: center;
   }
   .about__heading {
     margin-bottom: 2rem;
   }
   .about__right {
-    padding: 0;
+    padding: 0 0;
   }
   .about__btn {
     margin-top: 2rem;
