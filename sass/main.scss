@@ -3,6 +3,7 @@
 @import './components/header';
 @import './components/rating';
 @import './components/about';
+@import './components/presentation';
 
 
 /******css reset******/
@@ -41,7 +42,7 @@ li {
 
 
 // defining max-width
-.header__container, .about__content{
+.header__container, .about__content, .presentation__content{
     max-width: 1440px;
     margin: 0 auto;
 }
@@ -49,6 +50,8 @@ li {
     max-width: 1024px;
     margin: 0 auto;
 }
+
+/****media query*********/
 @media only screen and (max-width: 1000px){
     .header__container, .rating__container {
         max-width: 90%;
