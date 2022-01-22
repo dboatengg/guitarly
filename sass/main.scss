@@ -5,6 +5,7 @@
 @import './components/about';
 @import './components/presentation';
 @import './components/testimonial';
+@import './components/footer';
 
 
 /******css reset******/
@@ -48,7 +49,7 @@ li {
     max-width: 1440px;
     margin: 0 auto;
 }
-.rating__container, .testimonial__content{
+.rating__container, .testimonial__content, .footer__content{
     max-width: 1024px;
     margin: 0 auto;
 }

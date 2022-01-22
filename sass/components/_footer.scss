@@ -1,0 +1,47 @@
+@import '../partials/variables';
+
+.footer {
+    background-color: $black-color;
+    padding: 6rem 0 2rem 0;
+}
+.footer__text {
+    color: $gray-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 8.8rem;
+}
+.footer__card {
+    background-color: $primary-color;
+}
+.footer-logo {
+    width: 9rem;
+}
+.footer__title {
+    font-size: 4rem;
+}
+.footer__card {
+    display: flex;
+    max-width: 900px;
+    border-radius: 1rem;
+    margin: 0 auto;
+    padding-left: 4rem;
+    display: flex;
+    align-items: center;
+}
+.footer__btn {
+    background-color: $white-color;
+    margin-top: 2rem;
+}
+.copyright {
+    font-size: 14px;
+}
+.social {
+    display: flex;
+    gap: 15px;
+}
+.social i {
+    color: $white-color;
+    padding: 0.7rem;
+    border-radius: 50%;
+}

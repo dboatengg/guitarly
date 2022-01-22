@@ -13,6 +13,9 @@
 
     <!-- css link  -->
     <link rel="stylesheet" href="css/main.css">
+
+    <!-- font awesome  -->
+    <script src="https://kit.fontawesome.com/fc5c7c40e3.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <header>
@@ -42,11 +45,10 @@
                 </div>
             </hero>
             <picture class="hero__img">
-                <source media="(min-width: 1400px)" srcset="assets/image-lg_1x.jpg">
-                <source media="(min-width: 1234px)" srcset="assets/image-md_1x.jpg">
-                <source media="(min-width: 700px)" srcset="assets/image-sm_1x.jpg">
-                <source media="(min-width: 300px)" srcset="assets/image-xs_1x.jpg">
-                <img src="assets/image-xxs_1x.jpg" alt="A beautiful girl playing a guitar in a room">
+                <source media="(min-width: 1100px)" srcset="assets/img-lg.jpg">
+                <source media="(min-width: 600px)" srcset="assets/img-md.png">
+                <source media="(min-width: 400px)" srcset="assets/img-sm.png">
+                <img src="assets/img-xs.png" alt="A beautiful girl playing a guitar in a room">
             </picture>
         </div>
     </header>
@@ -154,8 +156,26 @@
                 </div>
             </div>
         </section>
-
     </main>
-    <footer></footer>
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__card">
+                <div class="">
+                    <h1 class="footer__title">Become a member of this growing community</h1>
+                    <button class="btn footer__btn">Join the community</button>
+                </div>
+                <img src="assets/footer-card-img.png" alt="">
+            </div>
+            <div class="footer__text">
+                <p class="copyright">&copy; Guitarly All rights reserved</p>
+                <img class="footer-logo" src="assets/logo-Light.svg" alt="">
+                <div class="social">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                    <a href=""><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

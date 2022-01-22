@@ -42,8 +42,6 @@ header {
     background-color: #101010;
 }
 .hero__img {
-    width: 100%;
-    height: auto;
     grid-area: three;
 }
 .hero {
@@ -66,8 +64,8 @@ header {
 .hero {
     padding: 10rem 15rem 10rem 10rem;
 }
-/****media query****/
 
+/****media query****/ 
 @media only screen and (max-width: 1000px){
     .header__container {
         grid-template-areas: 
