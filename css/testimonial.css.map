@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "ACAA,iCAAiC;ADCjC,AAAA,qBAAqB,CAAC;EAClB,UAAU,EAAE,MAAM;CACrB;;AACD,AAAA,KAAK,CAAC;EACF,gBAAgB,ECJJ,OAAO;CDKtB",
+    "sources": [
+        "../sass/components/testimonial.scss",
+        "../sass/partials/_variables.scss"
+    ],
+    "names": [],
+    "file": "testimonial.css"
+}
