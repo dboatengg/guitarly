@@ -153,11 +153,11 @@ header {
     gap: 4rem;
   }
   .rating__heading {
-    font-size: 3.8rem;
+    font-size: 3.5rem;
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 300px) {
   .rating__heading {
     font-size: 2.8rem;
   }
@@ -322,6 +322,9 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .testimonial__title {
+    font-size: 4rem;
   }
 }
 
