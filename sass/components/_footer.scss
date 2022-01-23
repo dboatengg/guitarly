@@ -37,6 +37,9 @@
     border-radius: 0.7rem;
     font-size: 1.8rem;
 }
+.footer__btn:hover {
+    cursor: pointer;
+}
 .copyright {
     font-size: 14px;
 }
@@ -63,8 +66,6 @@
     }
     .footer__title {
         font-size: 3rem;
-        width: 80%;
-        margin: 0 auto;
     }
     .footer__card {
         text-align: center;
@@ -78,7 +79,7 @@
         padding: 1.6rem 2.5rem;
         font-size: 1.6rem;
     }
-    .footer__img {
+    .footer__img, .footer__title{
         width: 80%;
         margin: 0 auto;
     }

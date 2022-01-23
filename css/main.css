@@ -280,7 +280,7 @@ header {
 .card__container {
   background-color: #2ec5ce;
   padding: 2rem;
-  border-radius: 0.5rem;
+  border-radius: 1rem;
   position: relative;
   z-index: 1;
 }
@@ -326,12 +326,21 @@ header {
   .testimonial__title {
     font-size: 4rem;
   }
+  .card__container::after {
+    top: 85%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
   .cards {
     width: 90%;
     margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 560px) {
+  .card__container::after {
+    top: 90%;
   }
 }
 
@@ -390,6 +399,10 @@ header {
   font-size: 1.8rem;
 }
 
+.footer__btn:hover {
+  cursor: pointer;
+}
+
 .copyright {
   font-size: 14px;
 }
@@ -427,8 +440,6 @@ header {
   }
   .footer__title {
     font-size: 3rem;
-    width: 80%;
-    margin: 0 auto;
   }
   .footer__card {
     text-align: center;
@@ -442,7 +453,7 @@ header {
     padding: 1.6rem 2.5rem;
     font-size: 1.6rem;
   }
-  .footer__img {
+  .footer__img, .footer__title {
     width: 80%;
     margin: 0 auto;
   }
