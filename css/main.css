@@ -89,7 +89,7 @@ header {
 }
 
 /****media query****/
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1100px) {
   .header__container {
         grid-template-areas: 'one' 'three' 'two';
     text-align: center;
