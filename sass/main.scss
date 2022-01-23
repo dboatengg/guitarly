@@ -56,7 +56,7 @@ li {
 
 /****media query*******/
 @media only screen and (max-width: 1000px){
-    .header__container, .rating__container, .testimonial__content {
+    .header__container, .rating__container, .testimonial__content, .footer__content {
         max-width: 90%;
     };
 }

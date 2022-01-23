@@ -32,6 +32,10 @@
 .footer__btn {
     background-color: $white-color;
     margin-top: 2rem;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 0.7rem;
+    font-size: 1.8rem;
 }
 .copyright {
     font-size: 14px;
@@ -44,4 +48,38 @@
     color: $white-color;
     padding: 0.7rem;
     border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
+.social i:hover {
+    color: $primary-color;
+}
+.footer__img {
+    max-width: 100%;
+    height: auto;
+}
+@media only screen and (max-width: 768px) {
+    .footer__card, .footer__text {
+        flex-direction: column-reverse;
+    }
+    .footer__title {
+        font-size: 3rem;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .footer__card {
+        text-align: center;
+        padding: 2rem 0;
+        gap: 2rem;
+    }
+    .footer__text {
+        gap: 3rem;   
+    }
+    .footer__btn {
+        padding: 1.6rem 2.5rem;
+        font-size: 1.6rem;
+    }
+    .footer__img {
+        width: 80%;
+        margin: 0 auto;
+    }
 }
