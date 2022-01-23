@@ -484,6 +484,7 @@ header {
   border-radius: 50%;
   -webkit-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  font-size: 2.5rem;
 }
 
 .social i:hover {
