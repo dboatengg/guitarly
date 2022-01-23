@@ -30,14 +30,17 @@
     align-items: center;
 }
 .footer__btn {
-    background-color: $white-color;
     margin-top: 2rem;
     padding: 1.6rem 3.2rem;
     border: none;
     border-radius: 0.7rem;
     font-size: 1.8rem;
+    transition: 0.3s ease-in-out;
+    background-color: rgb(252, 250, 250);
+    font-weight: 500;
 }
 .footer__btn:hover {
+    background-color: $white-color;
     cursor: pointer;
 }
 .copyright {

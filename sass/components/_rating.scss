@@ -20,6 +20,11 @@
 .rating__subheading {
     font-size: 2.8rem;
 }
+.view, .learners {
+    display: flex;
+    gap: 2.5rem;
+    flex-direction: column;
+}
 
 
 @media only screen and (max-width: 1000px){
@@ -31,11 +36,11 @@
         gap: 4rem;
     }
     .rating__heading {
-        font-size: 3.5rem;
+        font-size: 3.3rem;
     }
 }
 @media only screen and (max-width: 300px){
     .rating__heading {
-        font-size: 2.8rem;
+        font-size: 2.3rem;
     }
 }

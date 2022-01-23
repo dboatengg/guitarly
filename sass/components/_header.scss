@@ -43,6 +43,8 @@ header {
 }
 .hero__img {
     grid-area: three;
+    max-width: 100%;
+    height: auto;
 }
 .hero {
     grid-area: two;
