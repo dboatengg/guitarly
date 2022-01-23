@@ -45,8 +45,8 @@ header {
 
 .bar {
   display: block;
-  width: 25px;
-  height: 3px;
+  width: 30px;
+  height: 4px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -91,7 +91,7 @@ header {
 }
 
 /****media query****/
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1218px) {
   .header__container {
         grid-template-areas: 'one' 'three' 'two';
     text-align: center;
@@ -102,9 +102,12 @@ header {
   .hero__title {
     font-size: 4.3rem;
   }
+  .hero__left {
+    width: 70%;
+    margin: 0 auto;
+  }
   .nav {
-    width: 100%;
-    padding: 3rem 0;
+    padding: 5rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -114,6 +117,25 @@ header {
   }
   .hamburger {
     display: block;
+    cursor: pointer;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .hero__left {
+    width: 90%;
+  }
+  .hero__title {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .hero__title {
+    font-size: 3rem;
+  }
+  .nav {
+    padding: 4rem 1rem;
   }
 }
 
