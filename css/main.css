@@ -447,7 +447,10 @@ header {
     gap: 2rem;
   }
   .footer__text {
-    gap: 3rem;
+    gap: 2rem;
+  }
+  .social {
+    margin-bottom: 3rem;
   }
   .footer__btn {
     padding: 1.6rem 2.5rem;
