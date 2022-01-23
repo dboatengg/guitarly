@@ -64,6 +64,18 @@
     max-width: 100%;
     height: auto;
 }
+.attribution {
+    text-align: center;
+    margin-top: 3rem;
+}
+small {
+    color: $gray-color;
+    text-align: center;
+    font-size: 1.2rem;
+}
+small a {
+    color: $primary-color;
+}
 @media only screen and (max-width: 768px) {
     .footer__card, .footer__text {
         flex-direction: column-reverse;

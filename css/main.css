@@ -496,6 +496,21 @@ header {
   height: auto;
 }
 
+.attribution {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+small {
+  color: #d9e8ef;
+  text-align: center;
+  font-size: 1.2rem;
+}
+
+small a {
+  color: #2ec5ce;
+}
+
 @media only screen and (max-width: 768px) {
   .footer__card, .footer__text {
     -webkit-box-orient: vertical;
