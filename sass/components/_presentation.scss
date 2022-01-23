@@ -22,4 +22,12 @@
     .presentation__details {
         flex-direction: column;
     }
+    .presentation__heading {
+        font-size: 3.5rem;
+    }
+}
+@media only screen and (max-width: 400px){
+    .presentation__heading {
+        font-size: 2.6rem;
+    }
 }

@@ -107,7 +107,7 @@ header {
     margin: 0 auto;
   }
   .nav {
-    padding: 5rem;
+    padding: 4rem;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -158,11 +158,11 @@ header {
 }
 
 .rating__heading {
-  font-size: 4.6rem;
+  font-size: 4.4rem;
 }
 
 .rating__subheading {
-  font-size: 2.8rem;
+  font-size: 2rem;
 }
 
 .view, .learners {
@@ -176,7 +176,23 @@ header {
           flex-direction: column;
 }
 
-@media only screen and (max-width: 1000px) {
+.rating__box p {
+  font-size: 1.6rem;
+}
+
+.view p, .learners p {
+  font-size: 1.6rem;
+}
+
+.learner h2 {
+  font-size: 2.8rem;
+}
+
+.view h2 {
+  font-size: 2.8rem;
+}
+
+@media only screen and (max-width: 800px) {
   .rating__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -187,8 +203,8 @@ header {
     width: 80%;
     gap: 4rem;
   }
-  .rating__heading {
-    font-size: 3.3rem;
+  .rating__subheading {
+    margin-top: 2rem;
   }
 }
 
@@ -291,6 +307,15 @@ header {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .presentation__heading {
+    font-size: 3.5rem;
+  }
+}
+
+@media only screen and (max-width: 400px) {
+  .presentation__heading {
+    font-size: 2.6rem;
   }
 }
 
