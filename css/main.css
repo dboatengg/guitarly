@@ -136,6 +136,7 @@ header {
     text-align: center;
     -webkit-transition: 0.3s;
     transition: 0.3s;
+    z-index: 1;
     -webkit-box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
@@ -152,6 +153,9 @@ header {
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
+  }
+  .lock-scroll {
+    overflow: hidden;
   }
 }
 
@@ -404,6 +408,7 @@ header {
   display: -ms-flexbox;
   display: flex;
   gap: 2rem;
+  z-index: -999;
 }
 
 .profile {
