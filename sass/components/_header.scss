@@ -92,7 +92,9 @@ header {
     }   
     .nav-menu__item {
         color: $white-color;
-        margin: 5rem 0;
+    }
+    .nav-menu__list:not(:first-child) {
+        margin-top: 3rem;
     }
 
     .hamburger {
