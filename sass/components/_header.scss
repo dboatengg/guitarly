@@ -95,19 +95,8 @@ header {
     }
     .nav-menu {
         display: none;
-        position: absolute;
-        flex-direction: column;
-        top: 80px;
-        left: 0;
-        height: 10erm;
-        width: 100%;
-        background-color: $black-color;
-        padding: 3rem 0;
-        gap: 3rem;
     }
-    .nav-menu.active {
-        display: block;
-    }
+
     .hamburger {
         display: block;
         cursor: pointer;

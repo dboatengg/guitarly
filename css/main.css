@@ -116,21 +116,7 @@ header {
     color: #fff;
   }
   .nav-menu {
-    position: absolute;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    top: 80px;
-    left: 0;
-    height: 10erm;
-    width: 100%;
-    background-color: #0b0d17;
-    padding: 3rem 0;
-    gap: 3rem;
-  }
-  .nav-menu.active {
-    display: block;
+    display: none;
   }
   .hamburger {
     display: block;
