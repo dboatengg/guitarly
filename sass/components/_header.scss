@@ -92,15 +92,42 @@ header {
     }   
     .nav-menu__item {
         color: $white-color;
-    }
-    .nav-menu {
-        display: none;
+        margin: 5rem 0;
     }
 
     .hamburger {
         display: block;
         cursor: pointer;
     }
+    .nav-menu {
+        position: fixed;
+        left: -100%;
+        top: 9rem;
+        flex-direction: column;
+        padding: 5rem 0;
+        background-color: $black-color;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow:
+            0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
 }
 
 @media only screen and (max-width: 800px) {

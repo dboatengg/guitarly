@@ -1,11 +1,19 @@
-const hamburger = document.querySelectorAll('.bar');
-const menu = document.querySelector('.nav-menu');
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
 
 
+const navLink = document.querySelectorAll(".nav-menu__item");
 
-const hamburgerMenu = Array.from(hamburger);
+navLink.forEach(n => n.addEventListener("click", closeMenu));
 
-console.log(hamburgerMenu);
-hamburgerMenu.addEventListener('click', ()=>{
-    menu.classList.toggle('.active');
-})
+function closeMenu() {
+    hamburger.classList.remove("active");
+    navMenu.classList.remove("active");
+}
