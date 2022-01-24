@@ -42,7 +42,7 @@ header {
 }
 .hero__img {
     grid-area: three;
-    max-width: 100%;
+    width: 100%;
     height: auto;
 }
 .hero {
@@ -60,7 +60,7 @@ header {
     margin-bottom: 1.6rem;
 }
 .nav {
-    padding: 0 10rem;
+    padding: 0 8rem;
 }
 .hero {
     padding: 10rem 15rem 10rem 10rem;
@@ -76,8 +76,6 @@ header {
         'two';
         text-align: center;
     }
-
-
     .hero {
         padding: 0rem 0rem 10rem 0rem;
     }

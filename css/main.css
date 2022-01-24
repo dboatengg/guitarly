@@ -58,7 +58,7 @@ header {
   -ms-grid-row-span: 2;
   -ms-grid-column: 2;
   grid-area: three;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -83,7 +83,7 @@ header {
 }
 
 .nav {
-  padding: 0 10rem;
+  padding: 0 8rem;
 }
 
 .hero {
@@ -424,10 +424,6 @@ header {
   margin-top: 8.8rem;
 }
 
-.footer__card {
-  background-color: #2ec5ce;
-}
-
 .footer-logo {
   width: 9rem;
 }
@@ -442,6 +438,7 @@ header {
   display: flex;
   max-width: 900px;
   border-radius: 1rem;
+  background-color: #2ec5ce;
   margin: 0 auto;
   padding-left: 4rem;
   display: flex;
@@ -452,7 +449,7 @@ header {
 
 .footer__btn {
   margin-top: 2rem;
-  padding: 1.6rem 3.2rem;
+  padding: 1.6rem 2.5rem;
   border: none;
   border-radius: 0.7rem;
   font-size: 1.8rem;
@@ -494,6 +491,7 @@ header {
 .footer__img {
   max-width: 100%;
   height: auto;
+  border-radius: 0 1rem 1rem 0;
 }
 
 .attribution {
