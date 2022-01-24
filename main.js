@@ -19,7 +19,3 @@ function closeMenu() {
     navMenu.classList.remove("active");
     body.classList.toggle('opened');
 }
-
-function lockScroll() {
-    document.body.classList.toggle('lock-scroll');
-}

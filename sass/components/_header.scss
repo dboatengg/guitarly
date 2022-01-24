@@ -6,31 +6,38 @@
 header {
     background-color: $gray-color;
 }
+
 .header__container {
     display: grid;
-    grid-template-areas: 
-    'one three'
-    'two three';
+    grid-template-areas:
+        'one three'
+        'two three';
 }
+
 .logo {
     width: 15rem;
 }
+
 .nav {
     display: flex;
     align-items: center;
     grid-area: one;
     gap: 2rem;
 }
+
 .nav-menu {
     display: inline-flex;
     gap: 2rem;
 }
+
 .nav-menu__item {
     color: $black-color;
 }
+
 .hamburger {
     display: none;
 }
+
 .bar {
     display: block;
     width: 30px;
@@ -40,59 +47,72 @@ header {
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
+
 .hero__img {
     grid-area: three;
     width: 100%;
     height: auto;
 }
+
 .hero {
     grid-area: two;
 }
+
 .hero__title {
     font-size: 7.2rem;
 }
+
 .hero__btn {
     background-color: $primary-color;
     color: $white-color;
     margin-top: 3.2rem;
 }
+
 .hero__title {
     margin-bottom: 1.6rem;
 }
+
 .nav {
     padding: 0 8rem;
 }
+
 .hero {
     padding: 10rem 15rem 10rem 10rem;
 }
 
-/****media query****/ 
+/****media query****/
 
-@media only screen and (max-width: 1218px){
+@media only screen and (max-width: 1218px) {
     .header__container {
-        grid-template-areas: 
-        'one'
-        'three'
-        'two';
+        grid-template-areas:
+            'one'
+            'three'
+            'two';
         text-align: center;
     }
+
     .hero {
         padding: 0rem 0rem 10rem 0rem;
     }
+
     .hero__title {
         font-size: 4.3rem;
     }
+
     .hero__left {
         width: 70%;
         margin: 0 auto;
     }
+
     .nav {
         padding: 4rem;
         justify-content: space-between;
-    }   
+    }
+
     .nav-menu__item {
         color: $white-color;
     }
+
     .nav-menu__list:not(:first-child) {
         margin-top: 3rem;
     }
@@ -101,6 +121,7 @@ header {
         display: block;
         cursor: pointer;
     }
+
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -115,6 +136,7 @@ header {
         box-shadow:
             0 10px 27px rgba(0, 0, 0, 0.05);
     }
+
     .nav-menu.active {
         left: 0;
     }
@@ -130,16 +152,13 @@ header {
     .hamburger.active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
-    .lock-scroll {
-        overflow: hidden;
-    }
-
 }
 
 @media only screen and (max-width: 800px) {
     .hero__left {
         width: 90%;
     }
+
     .hero__title {
         font-size: 3.5rem;
     }
@@ -149,6 +168,7 @@ header {
     .hero__title {
         font-size: 3rem;
     }
+
     .nav {
         padding: 4rem 1rem;
     }
