@@ -1,65 +1,35 @@
-@import './partials/variables';
-@import './partials/mixins.scss';
-@import './components/header';
-@import './components/rating';
-@import './components/about';
-@import './components/presentation';
-@import './components/testimonial';
-@import './components/footer';
+/****abstracts****/
+@import "./abstracts/variables";
+@import "./abstracts/mixins";
 
-
-/******css reset******/
-html {
-    font-size: 62.5%;
-    scroll-behavior: smooth;
-} 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Inter', sans-serif;
-    font-size: 1.8rem;
-}
-p {
-    line-height: 32px;
-}
-a {
-    text-decoration: none;
-}
-li {
-    list-style-type: none;
-}
-.btn {
-    border: none;
-    padding: 1.6rem 3.2rem;
-    border-radius: 0.5rem;
-    font-size: 1.8rem;
-    transition: 0.3s ease-in-out;
-}
-.btn:hover {
-    cursor: pointer;
-    background-color: #4bdfe7;
-    // background-color: red;
-}
-
+/***components******/
+@import "./components/header";
+@import "./components/rating";
+@import "./components/about";
+@import "./components/presentation";
+@import "./components/testimonial";
+@import "./components/footer";
+@import "./components/resets";
 
 /*****defining max-width******/
-.header__container, .about__content, .presentation__content{
-    max-width: 1440px;
-    margin: 0 auto;
+.header__container,
+.about__content,
+.presentation__content {
+  max-width: 1540px;
+  margin: 0 auto;
 }
-.rating__container, .testimonial__content, .footer__content{
-    max-width: 1024px;
-    margin: 0 auto;
+.rating__container,
+.testimonial__content,
+.footer__content {
+  max-width: 1250px;
+  margin: 0 auto;
 }
 
 /****media query*******/
-@media only screen and (max-width: 1000px){
-    .header__container, .testimonial__content, .footer__content {
-        max-width: 90%;
-    };
+@media only screen and (max-width: 1000px) {
+  .header__container,
+  .testimonial__content,
+  .footer__content {
+    max-width: 90%;
+  }
 }

@@ -1,54 +1,56 @@
-@import '../partials/variables';
-@import '../partials/mixins.scss';
+@import "../abstracts/variables";
+@import "../abstracts/mixins";
 
 .rating {
-    background-color: $black-color;
-    color: $white-color;
+  background-color: $black-color;
+  color: $white-color;
 }
 .rating__container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    align-items: flex-start;
-    padding: 8.4rem 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-items: center;
+  align-items: flex-start;
+  padding: 8.4rem 0;
 }
 .rating__heading {
-    font-size: 4.4rem;
+  font-size: 4.4rem;
 }
 .rating__subheading {
-    font-size: 2rem;
+  font-size: 2rem;
 }
-.view, .learners {
-    display: flex;
-    gap: 2.5rem;
-    flex-direction: column;
+.view,
+.learners {
+  display: flex;
+  gap: 2.5rem;
+  flex-direction: column;
 }
 .rating__box p {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
-.view p, .learners p {
-    font-size: 1.6rem;
+.view p,
+.learners p {
+  font-size: 1.6rem;
 }
 .learner h2 {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
 .view h2 {
-    font-size: 2.8rem;
+  font-size: 2.8rem;
 }
-@media only screen and (max-width: 800px){
-    .rating__container {
-        grid-template-columns: 1fr;
-        align-items: flex-start;
-        text-align: center;
-        width: 80%;
-        gap: 4rem;
-    }
-    .rating__subheading {
-        margin-top: 2rem;
-    }
+@media only screen and (max-width: 800px) {
+  .rating__container {
+    grid-template-columns: 1fr;
+    align-items: flex-start;
+    text-align: center;
+    width: 80%;
+    gap: 4rem;
+  }
+  .rating__subheading {
+    margin-top: 2rem;
+  }
 }
-@media only screen and (max-width: 300px){
-    .rating__heading {
-        font-size: 2.3rem;
-    }
+@media only screen and (max-width: 300px) {
+  .rating__heading {
+    font-size: 2.3rem;
+  }
 }

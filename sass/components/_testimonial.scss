@@ -1,71 +1,71 @@
-@import '../partials/variables';
+@import "../abstracts/variables";
 
 .testimonial {
-    background-color: $gray-color;
+  background-color: $gray-color;
 }
 .testimonial__content {
-    text-align: center;
-    padding: 16.8rem 0;
+  text-align: center;
+  padding: 16.8rem 0;
 }
 .testimonial__title {
-    font-size: 6.4rem;
+  font-size: 6.4rem;
 }
 .testimonial__sub {
-    margin-bottom: 4rem;
+  margin-bottom: 4rem;
 }
 .card__container {
-    background-color: $primary-color;
-    padding: 2rem;
-    border-radius: 1rem;
-    position: relative;
-    z-index: 1;
+  background-color: $primary-color;
+  padding: 2rem;
+  border-radius: 1rem;
+  position: relative;
+  z-index: 1;
 }
 .card__container::after {
-    content: '';
-    height: 35px;
-    width: 35px;
-    position: absolute;
-    top: 88%;
-    left: 50%;
-    margin-left: -25px;
-    background-color: $primary-color;
-    transform: rotate(45deg);
-    z-index: -999;
+  content: "";
+  height: 35px;
+  width: 35px;
+  position: absolute;
+  top: 88%;
+  left: 50%;
+  margin-left: -25px;
+  background-color: $primary-color;
+  transform: rotate(45deg);
+  z-index: -999;
 }
 @media only screen and (max-width: 769px) {
-    .card__container::after {
-        top: 85%;
-    }
+  .card__container::after {
+    top: 85%;
+  }
 }
 .cards {
-    display: flex;
-    gap: 2rem;
-    z-index: -999;
+  display: flex;
+  gap: 2rem;
+  z-index: -999;
 }
 .profile {
-    margin-top: 3rem;
+  margin-top: 3rem;
 }
 
 @media only screen and (max-width: 900px) {
-    .cards {
-        flex-direction: column;
-    }
-    .testimonial__title {
-        font-size: 4rem;
-    }
-    .card__container::after {
-        top: 85%;
-    }
+  .cards {
+    flex-direction: column;
+  }
+  .testimonial__title {
+    font-size: 4rem;
+  }
+  .card__container::after {
+    top: 85%;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
-    .cards {
-        width: 90%;
-        margin: 0 auto;
-    }
+  .cards {
+    width: 90%;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 560px) {
-    .card__container::after {
-        top: 90%;
-    }
+  .card__container::after {
+    top: 90%;
+  }
 }

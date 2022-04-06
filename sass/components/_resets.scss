@@ -1,0 +1,35 @@
+html {
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Inter", sans-serif;
+  font-size: 1.6rem;
+}
+p {
+  line-height: 32px;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style-type: none;
+}
+.btn {
+  border: none;
+  padding: 1.6rem 3.2rem;
+  border-radius: 0.5rem;
+  font-size: 1.8rem;
+  transition: 0.3s ease-in-out;
+}
+.btn:hover {
+  cursor: pointer;
+  background-color: #4bdfe7;
+}
