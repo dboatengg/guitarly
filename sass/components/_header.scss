@@ -37,7 +37,7 @@ header {
   .bar {
     display: block;
     width: 30px;
-    height: 4px;
+    height: 3px;
     margin: 5px auto;
     -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
@@ -70,6 +70,11 @@ header {
 .hero__title {
   margin-bottom: 1.6rem;
 }
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
 
 /****media query****/
 @media only screen and (max-width: 1200px) {
@@ -90,10 +95,10 @@ header {
     width: 90%;
   }
   .hero {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
   .hero__title {
-    font-size: 4.3rem;
+    font-size: 5.3rem;
   }
 
   .hero__left {
@@ -126,9 +131,13 @@ header {
     left: 0;
     position: absolute;
     display: none;
+    overflow: hidden;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 5rem 0;
     background-color: $black-color;
+    // opacity: 0.4;
     width: 100%;
     height: 100vh;
     text-align: center;
@@ -138,7 +147,7 @@ header {
   }
 
   .nav__menu.active {
-    display: block;
+    display: flex;
   }
 
   .hamburger.active .bar:nth-child(2) {
@@ -147,14 +156,18 @@ header {
 
   .hamburger.active .bar:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
-    color: white;
-    z-index: 9999;
+    background-color: #ffffff;
+    z-index: 99999999;
+    position: absolute;
+    top: 40px;
   }
 
   .hamburger.active .bar:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
-    color: white;
-    z-index: 9999;
+    background-color: white;
+    z-index: 9999999;
+    position: absolute;
+    top: 30px;
   }
   .lock-scroll {
     overflow: hidden;
@@ -170,13 +183,13 @@ header {
   }
 
   .hero__title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .hero__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 

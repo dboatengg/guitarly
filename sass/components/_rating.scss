@@ -10,13 +10,21 @@
   grid-template-columns: repeat(3, 1fr);
   justify-items: center;
   align-items: flex-start;
-  padding: 8.4rem 0;
+  // gap: 2rem;
+  padding: 8.4rem 8rem 8.4rem 12rem;
 }
 .rating__heading {
-  font-size: 4.4rem;
+  font-size: 4.8rem;
+  margin-bottom: 0.8rem;
+}
+.rating__heading p {
+  font-size: 1.8rem;
 }
 .rating__subheading {
-  font-size: 2rem;
+  font-size: 2.8rem;
+}
+.rating__subheading p {
+  font-size: 1.6rem;
 }
 .view,
 .learners {
@@ -37,7 +45,7 @@
 .view h2 {
   font-size: 2.8rem;
 }
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .rating__container {
     grid-template-columns: 1fr;
     align-items: flex-start;

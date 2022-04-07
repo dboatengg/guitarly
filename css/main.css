@@ -62,7 +62,7 @@ header {
 .hamburger .bar {
   display: block;
   width: 30px;
-  height: 4px;
+  height: 3px;
   margin: 5px auto;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -104,6 +104,12 @@ header {
   margin-bottom: 1.6rem;
 }
 
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 /****media query****/
 @media only screen and (max-width: 1200px) {
   .hero {
@@ -121,10 +127,10 @@ header {
     width: 90%;
   }
   .hero {
-    padding: 3rem 0;
+    padding: 5rem 0;
   }
   .hero__title {
-    font-size: 4.3rem;
+    font-size: 5.3rem;
   }
   .hero__left {
     width: 90%;
@@ -154,10 +160,17 @@ header {
     left: 0;
     position: absolute;
     display: none;
+    overflow: hidden;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     padding: 5rem 0;
     background-color: #0b0d17;
     width: 100%;
@@ -170,7 +183,9 @@ header {
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
   }
   .nav__menu.active {
-    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -178,14 +193,18 @@ header {
   .hamburger.active .bar:nth-child(1) {
     -webkit-transform: translateY(8px) rotate(45deg);
             transform: translateY(8px) rotate(45deg);
-    color: white;
-    z-index: 9999;
+    background-color: #ffffff;
+    z-index: 99999999;
+    position: absolute;
+    top: 40px;
   }
   .hamburger.active .bar:nth-child(3) {
     -webkit-transform: translateY(-8px) rotate(-45deg);
             transform: translateY(-8px) rotate(-45deg);
-    color: white;
-    z-index: 9999;
+    background-color: white;
+    z-index: 9999999;
+    position: absolute;
+    top: 30px;
   }
   .lock-scroll {
     overflow: hidden;
@@ -200,13 +219,13 @@ header {
     width: 90%;
   }
   .hero__title {
-    font-size: 3.5rem;
+    font-size: 4.5rem;
   }
 }
 
 @media only screen and (max-width: 400px) {
   .hero__title {
-    font-size: 3rem;
+    font-size: 4rem;
   }
 }
 
@@ -233,15 +252,24 @@ header {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  padding: 8.4rem 0;
+  padding: 8.4rem 8rem 8.4rem 12rem;
 }
 
 .rating__heading {
-  font-size: 4.4rem;
+  font-size: 4.8rem;
+  margin-bottom: 0.8rem;
+}
+
+.rating__heading p {
+  font-size: 1.8rem;
 }
 
 .rating__subheading {
-  font-size: 2rem;
+  font-size: 2.8rem;
+}
+
+.rating__subheading p {
+  font-size: 1.6rem;
 }
 
 .view,
@@ -273,7 +301,7 @@ header {
   font-size: 2.8rem;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 900px) {
   .rating__container {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -628,9 +656,11 @@ small a {
   }
 }
 
+/*******color variables*********/
 html {
   font-size: 62.5%;
   scroll-behavior: smooth;
+  background-color: #2ec5ce;
 }
 
 * {
@@ -684,7 +714,7 @@ li {
 .rating__container,
 .testimonial__content,
 .footer__content {
-  max-width: 1250px;
+  max-width: 1540px;
   margin: 0 auto;
 }
 
