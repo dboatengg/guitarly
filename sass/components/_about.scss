@@ -5,12 +5,18 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   align-items: center;
+  padding: 10rem 8rem 8rem 10rem;
 }
 .about__right {
   padding: 0 5rem;
 }
+.about__right p {
+  font-size: 1.8rem;
+}
 .about__img {
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
+  border-radius: 1rem;
 }
 .about__btn {
   background-color: $primary-color;
@@ -27,20 +33,18 @@
 @media only screen and (max-width: 1250px) {
   .about__content {
     grid-template-columns: 1fr;
-    padding: 5rem 2rem;
+    padding: 8rem 2rem;
     text-align: center;
   }
   .about__heading {
     margin-bottom: 2rem;
   }
   .about__right {
-    padding: 0 0;
+    margin-top: 3rem;
+    padding: 0;
   }
   .about__btn {
     margin-top: 2rem;
-  }
-  .about__img {
-    border-radius: 5rem;
   }
 
   /*****max-width******/
