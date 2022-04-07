@@ -365,7 +365,7 @@ header {
 }
 
 /****media query****/
-@media only screen and (max-width: 1250px) {
+@media only screen and (max-width: 1024px) {
   .about__content {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
