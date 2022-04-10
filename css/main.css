@@ -154,6 +154,7 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 2rem;
   }
   .nav__menu {
     top: 0;
@@ -191,16 +192,16 @@ header {
     opacity: 0;
   }
   .hamburger.active .bar:nth-child(1) {
-    -webkit-transform: translateY(8px) rotate(45deg);
-            transform: translateY(8px) rotate(45deg);
+    -webkit-transform: translateY(-10px) rotate(45deg);
+            transform: translateY(-10px) rotate(45deg);
     background-color: #ffffff;
     z-index: 99999999;
     position: absolute;
     top: 40px;
   }
   .hamburger.active .bar:nth-child(3) {
-    -webkit-transform: translateY(-8px) rotate(-45deg);
-            transform: translateY(-8px) rotate(-45deg);
+    -webkit-transform: translateY(3px) rotate(-45deg);
+            transform: translateY(3px) rotate(-45deg);
     background-color: white;
     z-index: 9999999;
     position: absolute;

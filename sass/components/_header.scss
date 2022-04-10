@@ -124,6 +124,7 @@ header {
   .hamburger {
     display: block;
     cursor: pointer;
+    padding: 2rem;
   }
 
   .nav__menu {
@@ -155,7 +156,7 @@ header {
   }
 
   .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
+    transform: translateY(-10px) rotate(45deg);
     background-color: #ffffff;
     z-index: 99999999;
     position: absolute;
@@ -163,7 +164,7 @@ header {
   }
 
   .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
+    transform: translateY(3px) rotate(-45deg);
     background-color: white;
     z-index: 9999999;
     position: absolute;
