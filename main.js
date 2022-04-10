@@ -48,6 +48,7 @@ $(document).ready(function () {
     margin: 10,
     autoplay: true,
     dots: true,
+    autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
