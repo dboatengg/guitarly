@@ -140,7 +140,7 @@ header {
     border-radius: 10px;
   }
   .nav {
-    padding: 2rem 0;
+    padding: 0;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
