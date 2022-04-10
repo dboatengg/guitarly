@@ -19,7 +19,19 @@
 
     <!-- font awesome  -->
     <script src="https://kit.fontawesome.com/fc5c7c40e3.js" crossorigin="anonymous"></script>
+
+    <!-- owl carousel css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  
+    <!-- owl carousel theme.css link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- jquery  -->
+    <!-- <link rel="stylesheet" href="jquery-3.6.0.min.js"> -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
 </head>
+
 <body>
     <header class="header">
         <div class="header__container">
@@ -48,13 +60,6 @@
                     <button class="hero__btn btn">Try for free</button>
                 </div>
             </div>
-            <!-- <picture class="hero__img">
-                <source media="(min-width: 600px)" srcset="assets/hero-lg.png">
-                <source media="(min-width: 500px)" srcset="assets/hero-md.png">
-                <source media="(min-width: 380px)" srcset="assets/hero-sm.png">
-                <source media="(min-width: 270px)" srcset="assets/hero-xs.png">
-                <img src="assets/hero-xxs.png" alt="A beautiful girl playing a guitar in a room">
-            </picture> -->
             <img class="hero__img" src="assets/hero__img.png" alt="A beautiful girl playing a guitar in a room">
         </div>
     </header>
@@ -130,26 +135,26 @@
             <div class="testimonial__content">
                 <h1 class="testimonial__title">Real Stories from Students</h1>
                 <p class="testimonial__sub">Get inspired through these stories</p>
-                <div class="cards">
-                    <div class="card">
+                <div id="owl-demo" class="cards owl-carousel owl-theme">
+                    <div class="card item">
                         <p class="card__container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laborum illum corrupti veritatis quaerat? Vel saepe culpa magnam porro quo!</p>
                         <div class="profile">
-                            <img src="assets/John.png" alt="">
+                            <img class="card__img" src="assets/John.png" alt="">
                             <p>John Cooper</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card item">
                         <p class="card__container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laborum illum corrupti veritatis quaerat? Vel saepe culpa magnam porro quo!</p>
                         <div class="profile">
-                            <img src="assets/John.png" alt="">
-                            <p>John Cooper</p>
+                            <img class="card__img" src="assets/Steph.png" alt="">
+                            <p>Steph Cooper</p>
                         </div>
                     </div>
-                    <div class="card">
+                    <div class="card item">
                         <p class="card__container">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Saepe laborum illum corrupti veritatis quaerat? Vel saepe culpa magnam porro quo!</p>
                         <div class="profile">
-                            <img src="assets/John.png" alt="">
-                            <p>John Cooper</p>
+                            <img class="card__img" src="assets/Vanessa.png" alt="">
+                            <p>Vanessa Cooper</p>
                         </div>
                     </div>
                 </div>
@@ -180,5 +185,7 @@
         </div>
     </footer>
 <script src="main.js"></script>
+<!-- owl carousel js file -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 </body>
 </html>

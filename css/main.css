@@ -478,7 +478,7 @@ header {
   height: 35px;
   width: 35px;
   position: absolute;
-  top: 88%;
+  top: 86%;
   left: 50%;
   margin-left: -25px;
   background-color: #2ec5ce;
@@ -487,18 +487,10 @@ header {
   z-index: -999;
 }
 
-@media only screen and (max-width: 769px) {
-  .card__container::after {
-    top: 85%;
-  }
-}
-
 .cards {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 2rem;
   z-index: -999;
+  max-width: 500px;
+  margin: auto;
 }
 
 .profile {
@@ -527,9 +519,9 @@ header {
   }
 }
 
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 330px) {
   .card__container::after {
-    top: 90%;
+    top: 92%;
   }
 }
 
@@ -718,6 +710,11 @@ li {
   background-color: #4bdfe7;
 }
 
+img {
+  max-width: 100%;
+}
+
+/****carousel****/
 /*****defining max-width******/
 .header__container {
   max-width: 1540px;
@@ -735,6 +732,38 @@ li {
 .footer__content {
   max-width: 1540px;
   margin: 0 auto;
+}
+
+#owl-demo .item img {
+  display: block;
+  width: 100%;
+  max-width: 60px;
+  margin: auto;
+}
+
+.owl-carousel span {
+  width: 10px;
+  height: 10px;
+  margin: 5px 7px;
+  background: #2ec5ce !important;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
+}
+
+.owl-carousel .active span {
+  width: 12px !important;
+  height: 12px !important;
+  margin: 5px 7px;
+  border: 2px solid #2ec5ce;
+  background: transparent !important;
+  display: block;
+  -webkit-backface-visibility: visible;
+  -webkit-transition: opacity 200ms ease;
+  transition: opacity 200ms ease;
+  border-radius: 30px;
 }
 
 /****media query*******/

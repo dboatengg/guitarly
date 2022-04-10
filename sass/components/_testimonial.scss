@@ -25,7 +25,7 @@
   height: 35px;
   width: 35px;
   position: absolute;
-  top: 88%;
+  top: 86%;
   left: 50%;
   margin-left: -25px;
   background-color: $primary-color;
@@ -33,15 +33,18 @@
   z-index: -999;
 }
 @media only screen and (max-width: 769px) {
-  .card__container::after {
-    top: 85%;
-  }
+  // .card__container::after {
+  //   top: 85%;
+  // }
 }
 .cards {
-  display: flex;
-  gap: 2rem;
   z-index: -999;
+  max-width: 500px;
+  margin: auto;
 }
+// .card__img {
+// object-fit: contain;
+// }
 .profile {
   margin-top: 3rem;
 }
@@ -64,8 +67,8 @@
     margin: 0 auto;
   }
 }
-@media only screen and (max-width: 560px) {
+@media only screen and (max-width: 330px) {
   .card__container::after {
-    top: 90%;
+    top: 92%;
   }
 }

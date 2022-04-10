@@ -41,3 +41,17 @@ function removeOverflow() {
 //     navbar.classList.remove("sticky");
 //   }
 // }
+
+$(document).ready(function () {
+  $(".owl-carousel").owlCarousel({
+    loop: true,
+    margin: 10,
+    autoplay: true,
+    dots: true,
+    responsive: {
+      0: {
+        items: 1,
+      },
+    },
+  });
+});
