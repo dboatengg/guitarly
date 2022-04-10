@@ -336,7 +336,7 @@ header {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10rem 8rem 8rem 10rem;
+  padding: 10rem 0;
 }
 
 .about__right {
@@ -725,6 +725,7 @@ img {
 .about__content {
   max-width: 1440px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .rating__container,
@@ -732,8 +733,11 @@ img {
 .footer__content {
   max-width: 1540px;
   margin: 0 auto;
+  width: 90%;
 }
 
+/****media query*******/
+/***owl carousel styling****/
 #owl-demo .item img {
   display: block;
   width: 100%;
@@ -764,17 +768,5 @@ img {
   -webkit-transition: opacity 200ms ease;
   transition: opacity 200ms ease;
   border-radius: 30px;
-}
-
-/****media query*******/
-@media only screen and (max-width: 1024px) {
-  .header__container,
-  .rating__container,
-  .about__content,
-  .presentation__content,
-  .testimonial__content,
-  .footer__content {
-    max-width: 90%;
-  }
 }
 /*# sourceMappingURL=main.css.map */

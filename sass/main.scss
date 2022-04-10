@@ -15,11 +15,13 @@
 .header__container {
   max-width: 1540px;
   margin: 0 auto;
+  // width: 90%;
 }
 .presentation__content,
 .about__content {
   max-width: 1440px;
   margin: 0 auto;
+  width: 90%;
 }
 
 .rating__container,
@@ -27,9 +29,22 @@
 .footer__content {
   max-width: 1540px;
   margin: 0 auto;
+  width: 90%;
 }
 
-// owl carousel
+/****media query*******/
+// @media only screen and (max-width: 1024px) {
+//   .header__container,
+//   .rating__container,
+//   .about__content,
+//   .presentation__content,
+//   .testimonial__content,
+//   .footer__content {
+//     max-width: 90%;
+//   }
+// }
+
+/***owl carousel styling****/
 
 #owl-demo .item img {
   display: block;
@@ -71,16 +86,4 @@
   -webkit-border-radius: 30px;
   -moz-border-radius: 30px;
   border-radius: 30px;
-}
-
-/****media query*******/
-@media only screen and (max-width: 1024px) {
-  .header__container,
-  .rating__container,
-  .about__content,
-  .presentation__content,
-  .testimonial__content,
-  .footer__content {
-    max-width: 90%;
-  }
 }
