@@ -644,6 +644,7 @@ small a {
     font-size: 3rem;
   }
   .footer__card {
+    position: relative;
     text-align: center;
     padding: 2rem 0;
     gap: 2rem;
