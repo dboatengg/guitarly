@@ -657,14 +657,12 @@ small a {
     margin-bottom: 3rem;
   }
   .footer__btn {
-    padding: 1.2rem 0;
+    padding: 1.2rem 2rem;
     font-size: 1.6rem;
-    width: 90%;
-    margin: auto;
   }
   .footer__title {
     padding: 0 1rem;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
   }
   .footer__img {
     width: 60%;
